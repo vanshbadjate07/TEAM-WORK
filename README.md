@@ -1,5 +1,5 @@
 # TEAM-WORK
-**Our Team have 5 members **
+**Our Team have 5 members**
 **Where Vansh have created Repository and invited Vaishnavi, nikhil, Tanmay, Aditya for the collaboration**
 **All Team members have created there own branches in repository and push there files into there branches**
 **After that we have done the merging of all branches into one main branch**

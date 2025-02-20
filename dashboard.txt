@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="user_styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>User Dashboard</h2>
+            <ul>
+                <li onclick="showSection('milk-details')">Milk Details</li>
+                <li onclick="showSection('feed-purchases')">Feed Purchases</li>
+                <li onclick="showSection('advances')">Advances</li>
+                <li onclick="showSection('bills')">Bills</li>
+                <li onclick="logout()">Logout</li>
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <header>
+                <h1>Welcome, User</h1>
+            </header>
+            <main>
+                <!-- Milk Details Section -->
+                <div class="section" id="milk-details">
+                    <h2>Milk Collection Details</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Serial No</th>
+                                <th>Date</th>
+                                <th>Milk Quantity (liters)</th>
+                                <th>Milk Fat (%)</th>
+                                <th>Milk SNF (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2024-12-17</td>
+                                <td>15</td>
+                                <td>4.5</td>
+                                <td>8.8</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2024-12-18</td>
+                                <td>20</td>
+                                <td>4.3</td>
+                                <td>8.6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Feed Purchases Section -->
+                <div class="section" id="feed-purchases">
+                    <h2>Feed Purchases</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Serial No</th>
+                                <th>Date</th>
+                                <th>Bags Purchased</th>
+                                <th>Total Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2024-12-15</td>
+                                <td>5</td>
+                                <td>2500</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2024-12-18</td>
+                                <td>3</td>
+                                <td>1500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Advances Section -->
+                <div class="section" id="advances">
+                    <h2>Advances</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Serial No</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2024-12-10</td>
+                                <td>5000</td>
+                                <td>Repaid</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2024-12-17</td>
+                                <td>3000</td>
+                                <td>Pending</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Bills Section -->
+                <div class="section" id="bills">
+                    <h2>Bill Details</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Serial No</th>
+                                <th>Bill Date</th>
+                                <th>Total Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2024-12-20</td>
+                                <td>7500</td>
+                                <td>Paid</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2024-12-30</td>
+                                <td>6800</td>
+                                <td>Pending</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="user_dashboard.js"></script>
+</body>
+</html>
